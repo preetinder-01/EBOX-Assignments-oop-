@@ -1,0 +1,35 @@
+Overloading comparative operator
+
+Karan owns a gift shop and wants an application for his customers to help them decide which item is costlier. The program should ask a customer, name and price of both the items  they chose then print which item is costlier then which one to help them take a better decision.
+Write a C++ program to accept the name and price of both the items and then Overload comparative operator to check which item is costlier then which one and print it.
+Note: Overload the >= operator.
+ 
+Strictly adhere to the Object-Oriented Specifications given in the problem statement. All class names, member variable names and function names should be the same as specified in the problem statement.
+ 
+Create a class Item with the following private member variable
+Data Type 	Variable Name
+string 	name
+double 	cost
+Include appropriate getters and setters for the above class
+ 
+Include following operator overloading function in Item class
+Function Name 	Description
+bool operator >=(Item i)                                     	This function is used to overload the >= operator and return the boolean value whether the cost of the item is costlier or equal.
+
+Create a driver class called Main. In the main method, create two Item objects and invoke the above classes ,methods and overload the >= operator.
+ 
+Input and Output format:
+Refer sample input and output for formatting specifications.
+ 
+Sample Input and Output:
+[All text in bold corresponds to the input and the remaining corresponds to the output]
+ 
+Enter the item 1
+Ballpoint Pen
+Cost of that item
+70
+Enter the item 2
+Parker Pen
+Cost of that item
+120
+Parker Pen is costlier or equal to Ballpoint Pen

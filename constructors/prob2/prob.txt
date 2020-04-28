@@ -1,0 +1,80 @@
+
+
+
+problem 2
+
+Destructor
+ABC Blood bank wants to display a Welcome and a Thank you message for all their Blood donors as a symbol of respect.
+Create a class named Donor with the following public data members
+
+ 
+ Data Type   	Variable Name
+string      	name
+ int       	age
+float       	height
+float       	weight
+int 	no_of_units_donated
+                       
+Create a default constructor to display the message “Welcome to the Blood Bank”
+
+Display all the details of the donor using a display function.
+ 
+Method 	Return Type 	Member Function
+display() 	void 	to display all the details of the donor.
+
+Create a public destructor that displays the message “Thank you for donating the Blood”
+
+Create a driver class called Main, and in the main method obtain the donor details as input from the user and display the details calling the display method.
+
+Note :
+Strictly adhere to the object oriented specifications given as part of the problem statement.
+Use the same class names and member variable names.
+Read all the inputs and create instance for the class and call the constructor in main.
+
+[All text in bold are input and the remaining are output]
+
+Sample Input and Output 1:
+
+ Welcome to the Blood Bank
+Enter the donor details
+Enter the Name :
+ Anjana
+ Enter the Age :
+ 34
+ Enter the height :
+ 5.8
+ Enter the weight :
+ 55.0
+ Enter the No of units donated :
+ 2
+Donor details:
+ Anjana
+ 34
+ 5.8
+ 55.0
+ 2
+Thank you for donating the Blood
+
+
+Sample Input and Output 2:
+
+Welcome to the Blood Bank
+Enter the donor details
+ Enter the Name :
+ Aarthi
+ Enter the Age :
+ 31
+ Enter the height :
+ 5.2
+ Enter the weight :
+ 52.0
+ Enter the No of units donated :
+ 1
+  Donor details:
+  Aarthi
+  31
+  5.2
+  52.0
+  1
+ Thank you for donating the Blood
+

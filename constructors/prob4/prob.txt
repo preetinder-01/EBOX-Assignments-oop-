@@ -1,0 +1,90 @@
+PROBLEM 4
+
+
+
+
+
+                                                           Friend Function to Validate Password
+
+ 
+
+Its Chandler Bing's birthday and his good friend Joey wants to throw a party for all the near and dear ones.  As Chandler Bing is a big star, so Joey knows the fact that the fans of the former would definitely try to gate crash the party.
+
+So he decides to keep a security system at the door that will ask guest for their name and then username and password which Joey himself assigned for each guest. If the credentials match then a custom welcome message will be displayed and gate will open, otherwise it will display the message "Invalid username/password".
+
+Strictly adhere to the Object Oriented Specifications given in the problem statement. All class names, member variable names and function names should be the same as specified in the problem statement.
+
+Write a C++ program to validate password using friend function and  use a public display function to print the final output.
+
+Problem Constraint:
+     Validate using friend function
+
+Create a User class with the follwing private member variables
+Data type 	Variable
+string 	name
+string 	userName
+string 	password
+
+
+Use appropriate getters, setters and constructor in the order name, userName and password.
+Declare the following friend function inside the User class and define it outside the class.
+
+ 
+Friend Function 	Description
+friend string validate(string userName,string password)                                                                                                                                                                                                                                                                                                                                                                                 	Declare validate() as friend function.
+This function is used to validate the username and password given by the user. If the username and password match it returns the user name or else it returns "No".                                                                                                                                                                                                                        
+
+
+Declare the following member function inside the User class.
+Member Function 	Description
+User* getUserDetails()                                                                                                                     	This method returns the already hardcoded name, userName and password.The method is already given as a part of template
+void display (string s ) 	This function displays "Hiii...userName !! Welcome to the event!!! " if the validation is successful or else it displays “Invalid username/password”
+
+ 
+
+
+Create a driver class called Main. In the main method, obtain input from the user in the console and create a new User object and assign the values to the object's members using setters. Create a friend function validate to verify the user credentials and display the output using a public display function.
+Input  and Output format:
+
+Input consists of 3 strings
+First line of input correspondes to name
+Second line of input correspondes to username
+Third line of input correspondes to password
+
+Refer sample input and output for formatting specifications
+
+[All text in bold corresponds to input and the rest corresponds to output]
+
+ 
+
+ 
+Sample Input and Output 1:
+
+Enter name:
+vivi
+Enter the username:
+viveka
+Enter the password:
+vivi456
+Hiii...vivi !! Welcome to the event!!!
+
+ 
+
+ 
+
+ 
+Sample Input and Output 2:
+
+Enter name:
+Suresh
+Enter the username:
+Sureshkumar
+Enter the password:
+suresh345
+Invalid username/password
+
+ 
+
+ 
+
+ 

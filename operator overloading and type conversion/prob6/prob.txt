@@ -1,0 +1,53 @@
+Overloading array subscript operator
+ 
+Many hall owners provided an online rating feature for their customers. Design a program that first asks about the total number of halls and then asks rating for corresponding halls. To find the rating for the particular hall asks the hall number and if the hall number does not exist then return zero as the rating for the hall otherwise print the rating for the hall to know the particular hall rating given by the customer. Use Operator overloading mechanisms to overload the array subscript operator.
+
+Write a C++ program to overload the array subscript operator.
+Note: Overload the [ ] operator.
+ 
+Strictly adhere to the Object-Oriented Specifications given in the problem statement. All class names, member variable names and function names should be the same as specified in the problem statement.
+ 
+Create a class Hall with the following public member variables.
+Data Type 	Variable
+int* 	arr
+int  	size
+Include parameterized constructor for Hall class to allocate the array size dynamically.
+ 
+Include following operator overloading function in Hall class 
+Function Name 	Description
+int operator [](int )                                        	This function is used to overload the [] operator. If Hall number is present it returns the ratings for the hall otherwise it returns 0 and print the message "Hall # does not exist"
+ 
+Create a Main Class and write the main method in it and test the class.
+ 
+Input and Output format:
+Refer sample input and output for formatting specifications.
+ 
+Sample Input and Output:
+[All text in bold corresponds to input and rest corresponds to output]
+Enter total number of halls
+5
+Post your rating for hall 0
+6
+Post your rating for hall 1
+8
+Post your rating for hall 2
+5
+Post your rating for hall 3
+7
+Post your rating for hall 4
+4
+Enter the hall number to find its rating
+3
+Rating for hall 3 is 7
+Do you want to continue(yes/no):
+yes
+Enter the hall index to find its rating
+0
+Rating for hall 0 is 6
+Do you want to continue(yes/no):
+yes
+Enter the hall index to find its rating
+5
+Hall 5 does not exist
+Rating for hall 5 is 0
+no

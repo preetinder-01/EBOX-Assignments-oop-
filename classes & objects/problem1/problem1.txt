@@ -1,0 +1,97 @@
+Classes and objects II
+PROBLEM 1
+
+Arun ,a Final year undergraduate student involved in many social welfare activities. Blood donation is also one such social welfare activity.  He donates blood once in six months. Before blood donation, the blood bank collects the donor details like  Name, age, height, weight, gender, bloodgroup of the donor. Help the blood bank to collect the details and to display using a program.
+
+Create a class named Donor with the following data members declared in public.
+
+
+Data Type 	Variable Name
+string 	name
+int 	age
+float 	height
+float 	weight
+string 	gender
+string 	bloodGroup
+
+ 
+
+
+ 
+
+Include the following method
+
+Method
+	
+
+Return Type
+	
+
+Function
+
+display()
+	
+
+void
+	
+
+To display all the donor details
+
+ 
+
+
+Create a driver class called Main. In the main() method, obtain donar details as input from the user in the console & display it by accessing the display method.
+
+Note :
+Strictly adhere to the object oriented specifications given as part of the problem statement.
+Use the same class names and member variable names.
+
+[All text in bold are input and the remaining are output]
+
+
+Sample Input and Output 1:
+Enter the donor details
+Enter the name :
+Anjana
+Enter the age :
+34
+Enter the height :
+5.8
+Enter the weight :
+55
+Enter the gender :
+Female
+Enter the blood group :
+B+
+Donor details are :
+Name :Anjana
+Age :34
+height :5.8
+weight :55
+Gender :Female
+Blood Group :B+
+
+Sample Input and Output 2:
+Enter the donor details
+Enter the name :
+Vikram
+Enter the age :
+24
+Enter the height :
+6.1
+Enter the weight :
+62
+Enter the gender :
+Male             
+Enter the blood group :
+A-
+Donor details are :
+Name :Vikram
+Age :24
+height :6.1
+weight :62
+Gender :Male
+Blood Group :A-
+ 
+
+

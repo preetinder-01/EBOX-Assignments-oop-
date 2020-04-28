@@ -1,0 +1,54 @@
+Writing data into a file in CSV format
+
+ABC Bank needs to store information of all the users. For a user, the information that bank holds is user's name, username, password, contact number. Read this data from the console and store it in a file named "example.txt".
+Write a c++ program to read inputs from the console and write the data into a file as the comma separated values.
+
+Strictly adhere to the Object-Oriented Specifications given in the problem statement. All class names, member variable names and function names should be the same as specified in the problem statement. File names used should be same as mentioned in the problem description.
+
+Create a class named User with the following private member variables
+Data type 	Variable name
+string 	name
+string 	username
+string 	password
+string 	contactnumber
+Include appropriate constructors, getters and setters for the above class.
+
+Create a class named UserBO with the following member functions.
+Method name 	Description
+
+void writeUserdetails(ofstream &file,User obj[],int m)                                                                                                                                        	This function accepts user object,an ofstream file object and number of users. The function is used to write the data into the file.
+
+Create a driver class named main. In the main method, read the input from the user through the console and open a file named "example.txt", into which the datas are need to be written. Pass the file object to the writeUserdetails method and write the inputs as comma separated values into the file.
+
+Input and Output format:
+Refer sample input and output for formatting specifications.
+
+Sample input and output 1:
+[All text in bold corresponds to input and rest corresponds to output]
+
+sample input in the console:
+Enter the number of users:
+2
+Enter the name of user:
+ramesh
+Enter the contact number:
+900900901
+Enter the username:
+ramesh123
+Enter the password:
+qwertyramesh
+Enter the name of user:
+jude
+Enter the contact number:
+9876523410
+Enter the username:
+jude_user
+Enter the password:
+jude987654321
+Datas written in file successfully
+
+sample output in file: (example.txt)
+
+Information to be in CSV format.
+
+

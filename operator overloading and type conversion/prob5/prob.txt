@@ -1,0 +1,43 @@
+Overload new and delete operator
+
+
+Jon is a free lancer programmer. He got an assignment to make an application for an item rental store. When he analysed the requirments he understood that the program should provide the functionality of adding and deleting the items any time and storage type should not be static. He decided to use new and delete as they make dynamic allocation easy. 
+Write a C++ program to overload new and delete operator for the class Item.
+
+Strictly adhere to the Object Oriented Specifications given in the problem statement. All class names, member variable names and function names should be the same as specified in the problem statement.
+
+Create a class named Item with the following private member variable
+
+ 
+Data type 	Variable name
+string 	name
+int 	cost
+
+Include appropriate constructors, setters and getters for the above class.
+
+In class Item , include the following member functions
+Method name 	Description
+
+void display() 
+	To display the output details
+ void new(size_t size)                                                                                	The overloaded new operator accepts size of type size_t, which specifies the number of bytes of memory to be allocated. The return type of the overloaded new must be void*
+void delete(void *p) 	This function is used to delete an item object .
+
+Overload  the new and delete operator within the class and print the statement "Overloading delete operator" while invoking delete operator in the delete method.
+
+Create a driver class named main. In the main method, get the necessary inputs from the user and create a pointer object for the class to overload the new operator and display the details . Also invoke the delete operator to perform deletion.
+
+ Input and Output format:
+Refer sample input and output for formatting specifications.
+
+[All text in bold corresponds to input and rest corresponds to output]
+
+Sample Input and Output 1:
+Enter the item details:
+furniture items
+15000
+Overloading new operator
+The item details are:
+Item name:furniture items
+Item cost:15000
+Overloading delete operator

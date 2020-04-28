@@ -1,0 +1,62 @@
+PROBLEM 1
+
+
+ROBLEM
+
+Write a program to display details of the Employee using single Inheritance.
+
+Create a class named Employee with the following protected data members.                           
+ 
+Data Type     	Data Member   
+string 	name
+int 	experience
+int 	empId
+
+Include a default and parameterized constructor in the following order name, experience, empId.
+
+Create a class named Developer which inherits Employee class with the following public data members.                           
+ 
+Data Type     	Data Member   
+string 	skills
+string 	role
+
+
+Include a default and parameterized constructor in the following order name, experience, empId, skills, role.
+Invoke the base constructor as given below
+
+Developer(string name, int experience, int empId, string skills, string role):Employee(name, experience, empId)
+
+Create a method named displayDetails()  for the Developer class
+ 
+Method 	Return Type 	Member Function 
+displayDetails()                                	void                                  	This method is used to display all the details of the developer
+
+ 
+
+Note:
+Strictly adhere to the object oriented specifications given as part of the problem statement.
+Use the same class names and member variable names.
+Read all the inputs and create instances for the classes in the main.
+
+Input and Output Format:
+Refer sample input and output for formatting specifications.
+All text in bold corresponds to input and the rest corresponds to output.
+
+Sample Input and Output
+Enter the name
+John
+Enter the experience
+5
+Enter the employee id
+21
+Enter the technical skills of the developer
+Java,SpringBoot,Mysql
+Enter the role of the developer
+Backend
+Employee Details
+Name : John
+Experience : 5 years
+Employee Id : 21
+Technical Skills : Java,SpringBoot,Mysql
+Role : Backend
+ 

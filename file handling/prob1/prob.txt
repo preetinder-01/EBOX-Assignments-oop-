@@ -1,0 +1,20 @@
+Reading from file
+In ABC software company,they stored the details of employee in a particular file in a database.They only know the name of the file,hence they decide to find the file with its name.The easy way to find is to write a c++ file program to read the contents in the file.Manager allocated this work to you.
+Write a C++ program to read the contents in a given file.if the given file is not found display error message.
+
+Refer the sample input and ouput:
+[All text in bold are input and the remaining are output]
+Sample input & output 1:
+Give filename: input.txt
+Shanmathi
+22
+IT-Coding
+9654781230
+shan123@gmail.com
+23/06/1980
+A1B+
+
+Sample input & output 2:
+
+Give filename: inputformatfile.txt
+Error! Incorrect file.

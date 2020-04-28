@@ -1,0 +1,90 @@
+PROBLEM 3 
+
+
+
+
+Array of Objects
+Your friend has started a new business of planning parties and organising events. All the items required for his events are taken on rent, used and returned back. He got his first contract and he is very happy and nervous at the same time. To help him out you suggest him to make use of technology and use a program that helps him to maintain the list of all the available items. If they bring some new item type then it should be added to the list and the program can also be used to check the availability of all the items by providing a search function.
+
+You are familiar with concepts of  OOPS in programming and decided to design a program to add a new item type and search whether an item type is already available or not.
+
+Write  a C++ program to add and search ItemTypes using array, and to display whether the itemType is available or not.
+
+Strictly adhere to the Object Oriented Specifications given in the problem statement. All class names, member variable names and function names should be the same as specified in the problem statement.
+
+Create class ItemType with the following private members variables
+Data Type 	Variable Name
+string 	itemName
+double 	itemDeposit
+double 	costPerDay
+
+Include appropriate getters,setters in the class ItemType
+
+Create another class named ItemTypeBO and include the following member functions .
+Method Name 	Description
+int searchItemTypeByName(ItemType *itemtype,int n,string searchName)                                                                                                                   	This function accepts array of itemtype ,size of array and itemtype to be searched. The function is used to search  the itemtype from the array of itemtype using searchName. If the itemtype is available it returns 1 otherwise returns 0.
+ItemType createItemType(string itemName,double itemDeposit,double costPerDay)                                                                                                                                                                                                                             	This function takes itemtype name, deposit amount,cost per day as input. It creates an object of class  ItemType and returns it.
+
+Note:
+Use Array of Objects
+
+Create a driver class called Main. In the main method, obtain input from the user in the console and create a new ItemType object and assign the values to the object's members using setters. Get the name of the ItemType to be searched and display whether the ItemType is found or not using  SearchItemTypeByName method.
+
+Input  format:
+The first line of input consists an integer that correspondes to number of itemtypes.
+The following inputs corresponde to item type details.
+The last line of input consists of a string that correspones to the item name to be searched.
+Output format:
+The output consists of a string
+If the given item name is found print "ItemType found" else print "ItemType not found"
+If the number of item types is less than 1 print "Invalid Number"
+
+Refer sample input and output for formatting specifications
+[All text in bold corresponds to input and rest corresponds to output]
+
+Sample Input and Output 1:
+Enter the number of Itemtypes:
+2
+Enter details of item type 1
+Enter the Itemtype name:
+Stationary items
+Enter the deposit:
+5000
+Enter cost per day:
+5
+Enter details of item type 2
+Enter the Itemtype name:
+Electronic items
+Enter the deposit:
+70000
+Enter cost per day:
+70
+Enter the item name to be searched:
+Stationary items
+ItemType found
+ 
+Sample Input and Output 2:
+Enter the number of item type:
+2
+Enter details of item type 1
+Enter the Itemtype name:
+Furnitures
+Enter the deposit:
+100000
+Enter cost per day:
+1000
+Enter details of item type 2
+Enter the Itemtype name:
+Food items
+Enter the deposit:
+5000
+Enter cost per day:
+50
+Enter the item name to be searched:
+Table
+ItemType not found
+ 
+Sample Input and Output 3:
+Enter the number of item types:
+-8
+Invalid Number

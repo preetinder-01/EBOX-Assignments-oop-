@@ -1,0 +1,80 @@
+Problem 4
+
+Supermarket is a retail facility with wide range of products under one roof, including fullgroceries and general merchandise. They satisfy the customers in all their routine shopping needs in one trip. Arun owns a supermarket in coimbatore and he wanted to create a software that containing the purchase details of all the customers made on that day and at the end of the day, he wanted to calculate the total amount received and the total number of items purchased by all the customers in a database. Help him to do this by writing a c++ program.
+
+Create a class named Purchase with the following private data members.
+ 
+Data Type    	Variable Name
+string        	userName
+int  	countOfItems  
+float      	amount
+float 	totalAmt
+int             	totalCountOfItems
+
+
+   
+Use setters to set the values to objects and display all details using getters from the main.
+Get the details of all the customers purchased on the whole day.
+Declare the variables totalAmt and totalCountOfItems as static variables.
+
+ 
+Method 	Return Type 	Member Function
+display(Purchase obj[],int n) 	void 	To display the total amount and total number of count of Items purchased at  the end of the day.
+
+
+Create a driver class called Main. In the main method, get the details of n number of customers. Print the string “Purchase Details :” and display all the customer details and total amount and total number of items details in display method.
+
+
+Sample Input and Output 1 :
+Enter the Number of customers :
+ 5
+Enter the Name of the customer :
+Tharun
+Enter the No of Items purchased :
+25
+Enter the purchase amount :
+1000
+Enter the Name of the customer :
+Anjana
+Enter the No of Items purchased :
+20
+Enter the purchase amount :
+1200
+Enter the Name of the customer :
+Jai
+Enter the No of Items purchased :
+2
+Enter the purchase amount :
+100
+Enter the Name of the customer :
+Rajesh
+Enter the No of Items purchased :
+12
+Enter the purchase amount :
+500
+Enter the Name of the customer :
+Shanmathi
+Enter the No of Items purchased :
+2
+Enter the purchase amount :
+100
+Purchase Details :
+Customer 1 :Tharun
+No of Items purchased :25
+Purchase amount :1000
+Customer 2 :Anjana
+No of Items purchased :20
+Purchase amount :1200
+Customer 3 :Jai
+No of Items purchased :2
+Purchase amount :100
+Customer 4 :Rajesh
+No of Items purchased :12
+Purchase amount :500
+Customer 5 :Shanmathi
+No of Items purchased :2
+Purchase amount :100
+Total Amount Received :2900
+Total Number of Items sold :61
+
+ 

@@ -1,0 +1,174 @@
+PROBLEM 5
+
+
+
+
+Friend Class
+Joey is the manager of The "Party Planners" event management company. They organise various kinds of event and each event has a name, details, type of event, organiser name and total project expenses for the event. The M.D. of the company wants to analyze the growth rate of the company and has asked Joey to give details of all the events he manages daily in a file.
+Write a program to export the event details in CSV format and to export the name and organiser for the given type of event.
+Strictly adhere to the Object Oriented Specifications given in the problem statement. All class names, member variable names and function names should be the same as specified in the problem statement.
+Create a class named Event with the following private member variables
+ 
+Data Type 	Variable Name
+string 	name
+string 	details
+string 	type
+string 	organiser
+int 	attendeesCount
+double 	projectedExpenses
+ 
+Include the appropriate constructor, getters, and setters for the Event class. 
+ 
+Create another class named EventExport which is a friend class of Event class without any member variable.
+Include the following member functions in EventExport class
+ 
+Method Name 	Function
+void exportCSVFormat(Event *e, int num) 	Print the details of all the events in the CSV format
+void exportNameOrganiserInfo(Event *e, int num, string type)                                 	Print the name and organiser of the event for the given type
+ 
+Create a driver class called Main. In the Main method, create an array of the Event object and obtain input from the user in the console and assign the values to the object's members using setters. Create a new EventExport object to call exportCSVFormat() method to export all the event details in CSV format and exportNameOrganiserInfo() method to export the name and organiser of the event for the given type.
+ 
+Input and Output Format:
+Refer sample input and output for formatting specifications.
+ 
+[All text in bold corresponds to the input and the rest corresponds to output.]
+Sample Input1:
+Enter the number of events :                                                                                          
+3                                                                                                                     
+Enter the details of event 1                                                                                          
+Name :                                                                                                                
+Paper Presentation                                                                                                     
+Detail :                                                                                                              
+Competition                                                                                                           
+Type :                                                                                                                
+Symposium                                                                                                             
+Organiser :                                                                                                           
+Priya                                                                                                                 
+Attendees Count :                                                                                                      
+30                                                                                                                    
+Projected Expenses :                                                                                                   
+12000                                                                                                                 
+Enter the details of event 2                                                                                          
+Name :                                                                                                                
+Coding                                                                                                                
+Detail :                                                                                                              
+Contest                                                                                                               
+Type :                                                                                                                
+Symposium                                                                                                             
+Organiser :                                                                                                           
+Rachel                                                                                                                
+Attendees Count :                                                                                                      
+45                                                                                                                    
+Projected Expenses :                                                                                                   
+25000                                                                                                                 
+Enter the details of event 3                                                                                          
+Name :  
+Project Presentation                                                                                                   
+Detail :                                                                                                              
+Competition                                                                                                           
+Type :                                                                                                                
+Conference                                                                                                            
+Organiser :                                                                                                           
+John                                                                                                                  
+Attendees Count :                                                                                                      
+12                                                                                                                    
+Projected Expenses :                                                                                                   
+30000                                                                                                                 
+1. Export all the event details in CSV format                                                                         
+2. Export name and organiser for the given event type                                                                 
+1   
+ 
+Sample Output 1                                                                                                                 
+Paper Presentation, Competition, Symposium, Priya, 30, 12000                                                           
+Coding, Contest, Symposium, Rachel, 45, 25000                                                                         
+Project Presentation, Competition, Conference, John, 12, 30000 
+ 
+Sample Input 2:
+Enter the number of events :                                                                                          
+3                                                                                                                     
+Enter the details of event 1                                                                                          
+Name :                                                                                                                
+Paper Presentation                                                                                                     
+Detail :                                                                                                              
+Competition                                                                                                           
+Type :                                                                                                                
+Symposium                                                                                                             
+Organiser :                                                                                                           
+Priya                                                                                                                 
+AttendeesCount :                                                                                                      
+30                                                                                                                    
+ProjectedExpenses :                                                                                                   
+12000                                                                                                                 
+Enter the details of event 2                                                                                          
+Name :                                                                                                                
+Coding                                                                                                                
+Detail :                                                                                                              
+Contest                                                                                                               
+Type :                                                                                                                
+Symposium                                                                                                             
+Organiser :                                                                                                           
+Rachel                                                                                                                
+Attendees Count :                                                                                                      
+45                                                                                                                    
+Projected Expenses :      
+25000                                                                                                                 
+Enter the details of event 3                                                                                          
+Name :                                                                                                                
+Project Presentation                                                                                                   
+Detail :                                                                                                              
+Competition                                                                                                           
+Type :                                                                                                                
+Conference                                                                                                            
+Organiser :                                                                                                           
+John                                                                                                                  
+Attendees Count :                                                                                                      
+30                                                                                                                    
+Projected Expenses :                                                                                                   
+30000                                                                                                                 
+1. Export all the event details in CSV format                                                                         
+2. Export name and organiser for the given event type                                                                 
+2                                                                                                                     
+Enter the type                                                                                                        
+Symposium 
+     
+Sample Output 2                                                                                                     
+Paper Presentation, Priya                                                                                              
+Coding, Rachel 
+       
+Sample Input 3
+Enter the number of events :
+2
+Enter the details of event 1
+Name :
+Paper Presentation
+Detail :
+Competition
+Type :
+Symposium
+Organiser :
+Priya
+Attendees Count :
+30                                                                                                                   
+Projected Expenses :                                                                                                 
+12000                                                                                                                
+Enter the details of event 2                                                                                         
+Name :                                                                                                               
+Coding                                                                                                               
+Detail :                                                                                                             
+Contest                                                                                                              
+Type :                                                                                                               
+Symposium                                                                                                            
+Organiser :                                                                                                          
+John                                                                                                              
+Attendees Count :                                                                                                    
+25                                                                                                                   
+Projected Expenses :                                                                                                 
+45000 
+1. Export all the event details in CSV format                                                                        
+2. Export name and organiser of the given event type                                                                 
+3
+ 
+Sample Output 3
+Invalid choice
+
+

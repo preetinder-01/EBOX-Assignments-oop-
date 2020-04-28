@@ -1,0 +1,92 @@
+ROBLEM
+
+Write a program to display details of the Truck using Multiple Inheritance.
+
+Create a class named Vehicle with the following protected data members.                           
+Data Type     	Data Member   
+string 	model
+int 	year
+string 	manufacturer
+
+Include a default and parameterized constructor in the following order model, year, manufacturer.
+
+Create a class named FourWheeler with the following protected data members.                           
+Data Type     	Data Member   
+string 	gearType
+string 	fuelType
+
+
+Include a default and parameterized constructor in the following order gearType, fuelType.
+
+Create a class named Truck which inherits FourWheeler and Vehicle with the following public data members.                           
+Data Type     	Data Member   
+int 	cargoCapacity
+string 	size
+
+
+Include a default and parameterized constructor in the following model, year, gearType, fuelType, cargoCapacity, size.
+Invoke the base constructor as given below
+
+Truck(string model, int year, string manufacturer, string gearType, string fuelType, int cargoCapacity, string size):FourWheeler(gearType, fuelType),Vehicle(model, year, manufacturer)
+
+Create a method named displayDetails() for the Truck class
+ 
+Method 	Return Type 	Member Function 
+displayDetails()   	void 	This method is used to display all the details of the truck
+
+ 
+
+Note:
+Strictly adhere to the object oriented specifications given as part of the problem statement.
+Use the same class names and member variable names.
+Read all the inputs and create instances for the classes in the main.
+
+Sample Input and Output 1
+Enter the model of the vehicle
+Scania
+Enter the manufactured year
+2015
+Enter the name of the manufacturer
+Volkswagen AG
+Enter the gear type of the four wheeler
+Automatic
+Enter the fuel type of the four wheeler
+Petrol
+Enter the cargo capacity of the truck
+20
+Enter the size of the truck
+40X8X8
+Truck Details
+Model : Scania
+Year : 2015
+Manufacturer : Volkswagen AG
+Gear Type : Automatic
+Fuel Type : Petrol
+Cargo Capacity : 20 MT
+Size : 40X8X8
+
+
+
+Sample Input and Output 2
+Enter the model of the vehicle
+Iveco
+Enter the manufactured year
+2018
+Enter the name of the manufacturer
+Volvo
+Enter the gear type of the four wheeler
+Manual
+Enter the fuel type of the four wheeler
+Diesel
+Enter the cargo capacity of the truck
+28
+Enter the size of the truck
+50X8X8
+Truck Details
+Model : Iveco
+Year : 2018
+Manufacturer : Volvo
+Gear Type : Manual
+Fuel Type : Diesel
+Cargo Capacity : 28 MT
+Size : 50X8X8

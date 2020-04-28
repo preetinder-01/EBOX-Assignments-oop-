@@ -1,0 +1,113 @@
+PROBLEM 2
+
+
+
+PROBLEM
+
+Write a program to display details of the Book using hierarchical Inheritance.
+ 
+
+Create a class named Book with the following protected data members.                           
+ 
+Data Type     	Data Member   
+string 	name
+string 	author
+int 	price
+string 	publication
+
+Include a default and parameterized constructor in the following order name, author, price, publication.
+
+
+Create a class named PrintedBook which inherits Book class with the following public data members.                           
+Data Type     	Data Member   
+int 	numOfPages
+string 	paperType
+
+Include a default and parameterized constructor in the following order name, author, price, publication, numOfPages, paperType
+
+Invoke the base constructor as given below
+
+PrintedBook(string name, string author, int price, string publication, int numOfPages, string paperType):Book(name, author, price, publication)
+
+Create a class named EBook which inherits Book class with the following public data members.                           
+Data Type     	Data Member   
+string 	diskType
+int 	size
+
+Include a default and parameterized constructor in the following order name, author, price, publication, diskType, size.
+
+Invoke the base constructor as given below
+
+EBook(string name, string author, int price, string publication, string diskType, int size):Book(name, author, price, publication)
+
+Create a method named displayDetails()  for the PrintedBook class
+Method 	Return Type 	Member Function 
+displayDetails()   	void 	This method is used to display all the details of the PrintedBook
+
+ 
+
+ 
+
+Create a method named displayDetails() for the EBook class
+Method 	Return Type 	Member Function 
+displayDetails()               	void                            	This method is used to display all the details of the EBook
+
+
+Note:
+Strictly adhere to the object oriented specifications given as part of the problem statement.
+Use the same class names and member variable names.
+Read all the inputs and create instances for the classes in the main.
+
+Input and Output Format:
+Refer sample input and output for formatting specifications.
+All text in bold corresponds to input and the rest corresponds to output.
+
+Sample Input and Output 1
+Enter the type of book
+1.PrintedBook
+2.EBook
+1
+Enter the book name
+The Art of Living
+Enter the author name
+Dalai Lama
+Enter the price:
+200
+Enter the publication name:
+ABC
+Enter the number of pages of the book
+150
+Enter the paper type of the book
+Coated
+Printed Book Details
+Name : The Art of Living
+Author : Dalai Lama
+Price : 200
+Publication : ABC
+Number Of Pages : 150
+Paper Type : Coated
+
+Sample Input and Output 2
+Enter the type of book
+1.PrintedBook
+2.EBook
+2
+Enter the book name
+The Hanging of Afzal
+Enter the author name
+Arundhati Roy
+Enter the price:
+250
+Enter the publication name:
+ATT
+Enter the disk type of the book
+CD
+Enter the size of the disk
+10
+EBook Details
+Name : The Hanging of Afzal
+Author : The Hanging of Afzal
+Price : 250
+Publication : ATT
+Disk Type : CD
+Size : 10 MB

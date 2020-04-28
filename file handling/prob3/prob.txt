@@ -1,0 +1,35 @@
+
+
+                                                             Reading and writing to a file
+
+Write a c++ program to read the event details from one file and writa that to another file.
+
+Strictly adhere to the Object-Oriented Specifications given in the problem statement. All class names, member variable names and function names should be the same as specified in the problem statement. File names used should be same as mentioned in the problem description.
+
+Create a class named EventType with the following private data members.
+Data Type 	Variable Name
+string  	type
+
+Include appropirate getters and setters.Create a class named Event with the following private data members.
+Data Type 	Variable Name
+string 	eventName
+EventType 	type
+string 	eventDetail
+string 	eventOrganiser
+
+Include appropirate getters and setters.
+
+Create a driver class named Main. In the main method, create file objects and open the files readeventdetails.txt and writeeventdetails.txt  contains the event details with order event name,event detail,event organiser,event type.
+
+Input and Output format:
+Refer sample input and output for formatting specifications.
+
+Sample Input and Output 1:
+Sample Input file: (readeventdetails.txt)
+
+Event details(eventName,eventDetail,organiser,type) are to be in CSV format.
+
+
+Sample Output file: (writeeventdetails.txt)
+
+Event details(eventName,eventDetail,organiser,type) are to be in CSV format.

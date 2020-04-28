@@ -1,0 +1,93 @@
+
+
+
+
+	problem 1
+
+Constructors
+
+
+Mike is planning a birthday party for his wife Pheobe. He hired the company "The Party Planners" to make all the arrangments. He asked them to decorate the hall with lights only as Pheobe likes that. The planers planed the design and ordered lights to be used for decoration.
+
+But then Mike told them to use some more itemtypes like flowers or candles etc. for decoration. They asked him to keep suggesting the additional changes. Since planners were busy with managing other things, they gave Mike  a C++ program, that would display a menu with options
+1)Electronics
+2)Others
+If Mike chooses ‘Electronics’, then just ask itemId,itemName and hard code the itemType and itemVendor. But if Mike chooses ‘Others’, then ask for itemType and itemVendor as well. If he chooses options other than 1 or 2 display "Invalid choice".
+
+Hint: Use default constructor,parameterized constructor and getters/setters appropriately.
+Write a C++ program to create constructors to obtain item details from the user and to display the item detais.
+
+Strictly adhere to the Object Oriented Specifications given in the problem statement. All class names, member variable names and function names should be the same as specified in the problem statement.
+
+Create a class named Item with the following private member variables
+Data Type 	Variable Name
+string 	itemId
+string 	itemName
+string 	itemType
+string 	itemVendor
+
+
+Include the following constructors in the Item class
+ 
+Constructor Name 	Description
+Item( )                                                                                                                                                                          	This is the default Constructor used to initialize the itemType as Electricals and itemVendor as “Arun electricals”                                                                                           
+Item(string id,string name,string type,string vendor)                                                                                                                                                                                                                                                                      	This is the Parameterized Constructor to assign values as entered by user.
+
+
+Create a driver class called Main. In the main method, obtain input from the user in the console and create a new Item object and assign the values to the object's members using setters. Display the item details in main method.
+
+Input  format:
+The first line of input consists of an integer that correspondes to the choice 1 or 2
+The following inputs correspondes to item details
+
+Output  format:
+Display the Item details
+If the choice entered is not 1 or 2 print "Invalid choice"
+Refer sample input and output for formatting specifications.
+
+[All text in bold corresponds to input and rest corresponds to output]
+Sample Input and Output 1:
+Menu:
+1.Electronics
+2.Others
+Enter your choice:
+1
+Enter details of the item
+Enter item id:
+Item001
+Enter the item name:
+Switch
+Item details
+Item id:Item001
+Item name:Switch
+Item type:Electricals
+Item vendor:Arun electricals
+
+Sample Input and Output 2:
+Menu:
+1.Electronics
+2.Others
+Enter your choice:
+2
+Enter details of the item
+Enter item id:
+Item002
+Enter the item name:
+Table
+Enter the item type:
+Furniture
+Enter the item vendor:
+Modern furniture
+Item details
+Item id: Item002
+Item name: Table
+Item type: Furniture
+Item vendor: Modern furniture
+
+Sample Input and Output 3:
+Menu:
+1.Electronics
+2.Others
+Enter your choice:
+4
+Invalid choice

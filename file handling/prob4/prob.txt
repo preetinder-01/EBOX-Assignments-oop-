@@ -1,0 +1,21 @@
+File Details
+ 
+Write a C++ program to count the number of words and lines in the paragraph.The file.txt contains a single paragraph.
+
+Count the number of lines in the paragraph.
+Count the number of words in the paragraph.
+
+Get input from the console as a file name,read the paragraph and display output in the console.
+
+Input  Format:
+Input is the file name.
+Refer sample input and output for formatting specifications
+
+[All text in bold corresponds to input and the rest corresponds to output]
+Sample Input/Output :
+Enter the file name :
+file.txt
+Number of words in file : 78
+Numbers of lines in the file : 2
+
+ 

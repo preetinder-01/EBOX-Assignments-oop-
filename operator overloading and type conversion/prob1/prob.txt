@@ -1,0 +1,41 @@
+   Overloading + Operator using memeber function
+
+
+Lion's club is organising a sports day in which there will be various kinds of sports and recreational events.One such event is Pair long jump where total distance covered in a jump is total distance covered by individual player in the team. The distance is measured in terms of feet and inches. Players are supposed to enter the distance in score calculator machine and it will compute their total score.
+Define a class distance with feet and inches as its attribute. Define a method within the class that calculates total distance covered by a team,overload + operator.
+
+Strictly adhere to the Object Oriented Specifications given in the problem statement. All class names, member variable names and function names should be the same as specified in the problem statement.
+
+Create a class Distance  with the following private data members
+ 
+Data Type 	Variable Name
+int 	inches
+int 	feet
+
+Include appropirate constructors,getters and setters.
+
+Inside the class Distance include the following public member functions.
+Function Name 	Description
+Distance operator+(const Distance& d)                                              	
+
+This function is used to overload the + operator.Calculate the distance with the given feet and inches.
+Void display( ) 	This function is used to display the calculated distance.
+
+
+Include a member function Distance operator+(const Distance& d)  to overload + operator.
+
+Create a driver class called Main. In the main method, create two objects for the class, get the values from the user and use another object to add these two values.Call the display method using object of the class.
+Input and Output format:
+Refer sample input and output for formatting specifications.
+[All text in bold corresponds to input and rest corresponds to output]
+
+Sample Input and Output 1:
+Enter feet and inches of distance 1:
+5
+11
+Enter feet and inches of distance 2:
+7
+11
+The sum of two Distance is
+Feet:13
+Inches:10

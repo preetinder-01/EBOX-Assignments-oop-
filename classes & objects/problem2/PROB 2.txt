@@ -1,0 +1,55 @@
+PROBLEM2
+
+
+Lets Rock event management company organizes various kinds of events. For different kinds of event different items are required and all the items are categorised into various categories or item types. All the item types used for an event are rented so they want to be very careful and do not want to lose any of these. To keep the record of all the items they design a program that takes itemtype name,deposit and cost per day as input and displays it.
+
+Strictly adhere to the Object Oriented Specifications given in the problem statement. All class names, member variable names and function names should be the same as specified in the problem statement.
+
+Create a class named ItemType with the following private  member variables.
+Data Type 	Variable Name
+string 	name
+double 	deposit
+ double 	costPerDay
+Include appropriate getters and setters for the above class.
+
+Include the following member function in the ItemType class
+Method Name 	Description
+void display()              	This function is used to display the details of an itemtype
+
+Getter and Setter:
+Eg:
+For the private attribute name , getter is created as:
+    string getName()
+    {
+        return name;
+    }
+For the private attribute name , setter is created as:
+    void setName(string itemname)
+    {
+       name=itemname;
+    }
+
+Create a driver class called main. In the main method, obtain input from the user in the console and create a new ItemType object and assign the values to the object's members using setters. Print the string 'Itemtype details:' and display the details in display method.
+ 
+Input Format:
+
+The first input corresponds to the name of an itemtype.
+The second input corresponds to the deposit.
+The third input corresponds to the cost per day.
+ 
+Output Format:
+Refer sample input and output for formatting specifications.
+
+[All text in bold corresponds to input and remaining corresponds to output]
+
+Sample Input and Output 1:
+Enter name:
+electronic items
+Enter deposit:
+13000
+Enter cost Per Day:
+1000
+Itemtype details:
+Name: electronic items
+Deposit: 13000
+Cost Per Day: 1000

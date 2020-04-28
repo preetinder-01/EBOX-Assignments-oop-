@@ -1,0 +1,41 @@
+Operator Overloading(non member function)
+
+ 
+
+The sports club is organising a relay race in which each team consists of two memebers. The total time taken by a team to complete the race  is sum of time taken by both the players to complete their individual parts. The time is recorded in the format hh.mm.ss, and total time calculated also adheres to same pattern.
+Write a c++ program to accept two times from user and then overload + operator as a non member function to add two time values.
+
+
+Strictly adhere to the Object Oriented Specifications given in the problem statement. All class names, member variable names and function names should be the same as specified in the problem statement.
+
+Create a class named Time with the following private member variables
+Data type 	Variable name
+int 	hours
+int 	minutes
+int 	seconds
+
+ 
+
+Include appropriate constructors,getters and setters for the above class.
+
+Create a non member function  Time & operator+(Time &t1,Time &t2)  to overload + operator. This function is used to add two time values. Print the statement "The sum of given time is:" and display the result.
+
+Create a driver class called main. In the main method, create two objects for the Time class and get input values from the user though the console and invoke + operator.
+
+Input and Output format:
+Print the sum of given time as HH:MM:SS 
+Refer sample input and output for formatting specifications.
+
+[All text in bold corresponds to input and rest corresponds to output]
+
+Sample Input and Output 1:
+Enter the first time:
+10
+55
+30
+Enter the second time:
+11
+15
+10
+The sum of given time is:
+22:10:40

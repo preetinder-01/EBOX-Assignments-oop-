@@ -1,0 +1,85 @@
+Overloading ++ (Prefix and Postfix)
+
+
+Hotel Central Perk rents halls for various kinds of events. For each hall basic price is fixed but if the event is wedding then additional cost is added but for events like birthday parties price remains the same. If it is a social event or a charity event they give a special discount. Ask user the type of event and overload ++ and -- operator to compute the final cost for the hall.
+
+Strictly adhere to the Object Oriented Specifications given in the problem statement. All class names, member variable names and function names should be the same as specified in the problem statement.
+
+create a class named Hall with following private member variables
+Data Type 	Variable Name
+string 	hallName
+string  	eventType
+double 	price
+ 
+Include appropriate constructor, getters, and setters for the Hall class
+Create a driver class called Main. Obtain the hallname, event type and price from the user.
+If the event is a wedding, the cost of the hall will be 5% higher than the fixed price.
+Note: Overload prefix increment operator to achieve this.
+If the event is a birthday, the cost of the hall will be same as the fixed price.
+Note: Overload postfix increment operator to achieve this.
+If the event is a social event, the cost of the hall will be 10% lesser than the fixed price.
+Note: Overload postfix decrement operator to achieve this.
+ 
+Input and Output format
+Input consists of an integer corresponds to the event name.
+Print the details of the event in the main method itself.
+Refer sample input and output for formatting specifications.
+ 
+[All text in bold corresponds to the input and the rest corresponds to output.]
+ 
+Sample Input/ Output 1
+Enter the hall name                                                                                                     
+Royal                                                                                                                   
+List of event types                                                                                                     
+1.Wedding                                                                                                               
+2.Birthday                                                                                                              
+3.Social Events                                                                                                         
+Select the event type                                                                                                   
+1                                                                                                                       
+Enter the price                                                                                                         
+23000                                                                                                                   
+Hall name : Royal                                                                                                       
+Event Type : Wedding                                                                                                    
+Price : 24150.00 
+Sample Input/ Output 2
+Enter the hall name                                                                                                   
+Grande                                                                                                                
+List of event types                                                                                                   
+1.Wedding                                                                                                             
+2.Birthday                                                                                                            
+3.Social Events                                                                                                       
+Select the event type                                                                                                 
+2                                                                                                                     
+Enter the price                                                                                                       
+12000                                                                                                                 
+Hall name : Grande                                                                                                    
+Event Type : Birthday                                                                                                 
+Price : 12000.00  
+       
+Sample Input/ Output 3
+Enter the hall name                                                                                                   
+Greene                                                                                                                
+List of event types                                                                                                   
+1.Wedding                                                                                                             
+2.Birthday                                                                                                            
+3.Social Events                                                                                                       
+Select the event type                                                                                                 
+3                                                                                                                     
+Enter the price                                                                                                       
+14000                                                                                                                 
+Hall name : Greene                                                                                                    
+Event Type : Social Event                                                                                             
+Price : 12600.00  
+ 
+Sample Input/ Output 4
+Enter the hall name                                                                                                   
+Royal                                                                                                                 
+List of event types                                                                                                   
+1.Wedding                                                                                                             
+2.Birthday                                                                                                            
+3.Social Events                                                                                                       
+Select the event type                                                                                                 
+4                                                                                                                     
+Enter the price                                                                                                       
+13000                                                                                                                 
+Invalid Event Type    

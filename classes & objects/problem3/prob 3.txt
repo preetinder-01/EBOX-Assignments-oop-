@@ -1,0 +1,99 @@
+PROBLEM 3
+
+
+
+Classes and Objects
+Arun and his classmates organized a blood donation camp with the help of a rotary club in coimbatore. The main aim of the camp is to create a database consisting of all the donor details and this can be used in future during emergencies. Given the details of n donors like Name, age, height weight, gender and bloodgroup, help them to display all the donor details by writing a c++ program.
+ 
+Create a class called Donor that contains the following attributes declared in public.
+Data Type   	Variable Name
+string 	name
+int 	age
+float 	height
+float 	weight
+string 	gender
+string 	bloodGroup
+ 
+Include the following method in Donor class
+Method 	Return Type 	Member Function
+display() 	void 	This method must display the donor details.
+ 
+Create a driver class called Main. In the main method, get the details of n number of donors and display all the donor details.
+ 
+Note :
+Strictly adhere to the object oriented specifications given as part of the problem statement.
+Use the same class names and data member  names.
+[All text in bold are input and the remaining are output]
+Read all the inputs and create instances of the class in the main.
+ 
+Sample Input and Output 1:
+
+Enter the number of donors:
+2
+Enter the donor details1
+Enter the Name :
+Adithya
+Enter the Age :
+24
+Enter the height :
+156.9
+Enter the weight :
+45.9
+Enter the Gender :
+male
+Enter the Blood Group :
+B+
+Enter the donor details2
+Enter the Name :
+Suraj
+Enter the Age :
+34
+Enter the height :
+134.5
+Enter the weight :
+56.7
+Enter the Gender :
+male
+Enter the Blood Group :
+AB+
+Donor details in the hospital database :
+Donor1
+Name :Adithya
+Age :24
+height :156.9
+weight :45.9
+Gender :male
+Blood Group :B+
+Donor2
+Name :Suraj
+Age :34
+height :134.5
+weight :56.7
+Gender :male
+Blood Group :AB+
+
+Sample Input and Output 2:
+
+Enter the number of donors:
+1
+Enter the donor details1
+Enter the Name :
+Anjana
+Enter the Age :
+24
+Enter the height :
+145.6
+Enter the weight :
+34.5
+Enter the Gender :
+female
+Enter the Blood Group :
+B+
+Donor details in the hospital database :
+Donor1
+Name :Anjana
+Age :24
+height :145.6
+weight :34.5
+Gender :female
+Blood Group :B+
